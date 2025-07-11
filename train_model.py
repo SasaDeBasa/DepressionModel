@@ -121,11 +121,12 @@ joblib.dump(pipeline, 'depression_model.pkl')
 print("✅ Model saved as depression_model.pkl")
 
 # ----------------------------------------------------------
-# 📌 Save feature order for deployment
+# 📌 Save raw feature order for deployment
 # ----------------------------------------------------------
-feature_names = pipeline.named_steps['preprocessor'].get_feature_names_out().tolist()
+raw_feature_order = features
 
 with open('feature_order.json', 'w') as f:
-    json.dump(feature_names, f)
+    json.dump(raw_feature_order, f)
 
-print("✅ Feature order saved as feature_order.json")
+print("✅ Raw feature order saved as feature_order.json")
+
