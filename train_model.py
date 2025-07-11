@@ -16,7 +16,7 @@ from sklearn.metrics import classification_report
 # ----------------------------------------------------------
 # 📌 Load Data
 # ----------------------------------------------------------
-df = pd.read_csv('phq9_dataset.csv')
+df = pd.read_csv('synthetic_phq9_dataset.csv')
 print("✅ Data loaded.")
 
 # ----------------------------------------------------------
